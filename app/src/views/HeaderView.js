@@ -1,0 +1,61 @@
+define([
+    'jquery',
+    'underscore',
+    'backbone',
+    'views/BaseView',
+    'hbs!templates/header_template'
+], function($, _, Backbone, BaseView, myTemplate){
+
+    var HeaderView = BaseView.extend({
+
+        events: {
+            // events here
+            'click .site-link': 'onClickSiteLink'
+        },
+
+        id: 'header',
+
+        vent: {}, // event map passed in
+
+        initialize: function( options ){
+
+            // pass in event map/aggregator
+            this.vent = (options) ? options.vent || {} : {};
+
+            // combine base view events
+            this.events = _.extend({}, this.events, this.genericEvents);
+            this.delegateEvents();
+
+            // make sure all methods are executed in correct context
+            _.bindAll(this, 'render', 'onClickSiteLink');
+
+            // for quicker testing, get template dependencies
+            console.log(
+                'Variables referenced in this template: ',                     myTemplate.vars,
+                '\nPartials/templates that this file directly depends on: ',     myTemplate.deps,
+                '\nHelpers that this template directly depends on: ',            myTemplate.helpers,
+                '\nThe metadata object at the top of the file (if it exists): ', myTemplate.meta
+            );
+
+            BaseView.prototype.initialize.call(this, options);
+
+            return this;
+        },
+
+        onClickSiteLink: function(e){
+            e.preventDefault();
+            this.vent.trigger('header:sitelink:click', $(e.currentTarget).attr('href'));
+        },
+
+        render: function(){
+            var tmpl = myTemplate({});
+            this.$el.append(tmpl);
+            return this;
+        }
+
+
+    });
+
+    return HeaderView;
+
+});

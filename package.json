@@ -1,0 +1,29 @@
+{
+  "name": "require_backbone_handlebars",
+  "preferGlobal": "false",
+  "version": "0.1.0",
+  "author": "Nick Jonas <nick@workofjonas.com>",
+  "description": "A fairly light AMD-style boilerplate for development and production, using RequireJS/Backbone/Handlebars",
+  "contributors": [
+    {
+      "name": "Nick Jonas",
+      "email": "nick@workofjonas.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nick-jonas/boilerplates.git"
+  },
+  "keywords": [
+    "boilerplate",
+    "backbone",
+    "requirejs"
+  ],
+  "dependencies" : {},
+  "devDependencies": {},
+  "bundledDependencies": [],
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.6"
+  }
+}
