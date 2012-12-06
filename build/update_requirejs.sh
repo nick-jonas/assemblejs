@@ -35,7 +35,7 @@ elif [[ "$CONFIRM" != "y" ]] ; then
 fi
 
 echo "Fetching requireJS v$RJS_VERSION"
-REQUIRE_PATH=`dirname $PWD`/app/src/libs/require
+REQUIRE_PATH=`dirname $PWD`/app/src/libs
 # If, for some reason, curl fails, we'll still have our old copy of require
 mv $REQUIRE_PATH/require.js $REQUIRE_PATH/require.js.old
 curl -f -# $REQUIREJS_URI -o $REQUIRE_PATH/require.js

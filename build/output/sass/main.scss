@@ -16,8 +16,29 @@
 @import "compass/css3/box-shadow";
 @import "compass/css3/text-shadow";
 
+// fonts
+@import "fonts/ss-pika";
+@import "fonts/ss-social";
+
 // site specific
 @import "variables";
 @import "mixins";
 
-//@import "sections/*";
+// components
+@import "components/header";
+
+// sections
+
+
+// other
+body{
+    background:$siteBgColor;
+}
+
+a{
+    text-decoration:none;
+    color:$linkColor;
+    &:hover{
+        color: $linkHighlightColor;
+    }
+}

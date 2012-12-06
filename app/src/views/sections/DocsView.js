@@ -3,7 +3,7 @@ define([
     'underscore',
     'backbone',
     'views/BaseView',
-    'hbs!templates/sections/docs_template'
+    'hbs!template/sections/docs_template'
 ], function($, _, Backbone, BaseView, myTemplate){
 
     var DocsView = BaseView.extend({

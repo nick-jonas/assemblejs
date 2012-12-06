@@ -20,30 +20,25 @@
 
   paths:{
     // path to require, must use different namespace
-    requireLib:     "libs/require/require",
+    requireLib:     "libs/require",
 
     // JavaScript folders.
     libs: "libs",
     plugins: "plugins",
 
     // Libraries.
-    jquery:         "libs/jquery/jquery",
-    modernizr:      "libs/modernizr/modernizr",
-    // lodash:         "libs/lodash/lodash",
-    backbone:       "libs/backbone/backbone",
-
-    // https://github.com/SlexAxton/require-handlebars-plugin
-    hbs:            "libs/handlebars/hbs",
-    handlebars:     "libs/handlebars/Handlebars",
-    // underscore:     "libs/handlebars/hbs/underscore",
-    i18nprecompile: "libs/handlebars/hbs/i18nprecompile",
-    json2:          "libs/handlebars/hbs/json2",
-
-    underscore:     "libs/lodash/lodash",
+    jquery:         "libs/jquery",
+    modernizr:      "libs/modernizr",
+    backbone:       "libs/backbone",
+    underscore:     "libs/lodash", // lodash drop in
+    hbs:            "libs/hbs",
+    handlebars:     "libs/hbs/Handlebars",
+    i18nprecompile: "libs/hbs/hbs/i18nprecompile",
+    json2:          "libs/hbs/hbs/json2",
 
     // Just a short cut so we can put our html outside the js dir
     // When you have HTML/CSS designers this aids in keeping them out of the js directory
-    templates: "templates"
+    templates: "template"
   },
 
   shim: {

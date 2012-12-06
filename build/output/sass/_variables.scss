@@ -1,10 +1,29 @@
 // colors
+$white: #FFFFFF;
+$darkGrey: #594F4F;
+$denim: #547980;
+$teal: #45ADA8;
+$lightGreen: #9DE0AD;
+$chalkYellow: #E5FCC2;
+
+// colors by context
+$navTextColor: $denim;
+$navTextHoverColor: $darkGrey;
+$logoTextColor: #FAB357;//$teal;
+$siteBgColor: #2A0F18;//$chalkYellow;
+$linkColor:#AA3B20;//$lightGreen;
+$linkHighlightColor:$white;//$darkGrey;
 
 // z-indices
 
 // breakpoints
 
-// font stacks
+// fonts
 $garamond: "garamond-premier-pro-display","adobe-garamond-pro", Garamond, ‘Hoefler Text’, ‘Times New Roman’, Times, serif;
 $futura: "futura-pt", Futura, "Trebuchet MS", Arial, sans-serif;
 $helvetica: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
+// fonts by context
+$navFont: $helvetica;
+$logoFont: $helvetica;
+$taglineFont: $helvetica;

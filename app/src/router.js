@@ -32,10 +32,6 @@ define([
             this.headerView.render();
             $('#header').html(this.headerView.el);
 
-            // main navigate
-            this.vent.on('header:sitelink:click', function( link ){
-                that.navigate(link, true);
-            });
 
         },
 

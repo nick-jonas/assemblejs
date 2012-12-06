@@ -3,7 +3,7 @@ define([
     'underscore',
     'backbone',
     'views/BaseView',
-    'hbs!templates/sections/contributors_template'
+    'hbs!template/sections/contributors_template'
 ], function($, _, Backbone, BaseView, myTemplate){
 
     var ContributorsView = BaseView.extend({

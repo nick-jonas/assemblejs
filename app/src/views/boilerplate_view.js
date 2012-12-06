@@ -3,7 +3,7 @@ define([
     'underscore',
     'backbone',
     'views/BaseView',
-    'hbs!templates/boilerplate_template'
+    'hbs!template/boilerplate_template'
 ], function($, _, Backbone, BaseView, myTemplate){
 
     var ViewBoilerplate = BaseView.extend({
