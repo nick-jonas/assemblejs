@@ -1,0 +1,15 @@
+{
+    "output_file_dir"   : "/",
+    "file_filter"       : ["!.svn", "!.git", "!.DS_Store", "!thumbs.db", "!.sass-cache"],
+    "templates" : [
+    {
+        "input_file"        : "/boilerplate_template.html",
+        "output_file_dir"   : "src/template/sections/",
+        "output_file_name"  : "<%=name%>_template.html"
+    },
+    {
+        "input_file"        : "/boilerplate_view.js",
+        "output_file_dir"   : "src/views/",
+        "output_file_name"  : "<%=name%>View.js"
+    }]
+}

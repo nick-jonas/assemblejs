@@ -1,0 +1,155 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'dot' ]
+2 info using npm@1.1.66
+3 info using node@v0.8.15
+4 verbose read json /Users/Jonas/Projects/repo/assemblejs/package.json
+5 verbose read json /Users/Jonas/Projects/repo/assemblejs/node_modules/commander/package.json
+6 verbose read json /Users/Jonas/Projects/repo/assemblejs/node_modules/doT/package.json
+7 verbose read json /Users/Jonas/Projects/repo/assemblejs/node_modules/file-utils/package.json
+8 verbose read json /Users/Jonas/Projects/repo/assemblejs/node_modules/lodash/package.json
+9 verbose read json /Users/Jonas/Projects/repo/assemblejs/node_modules/progress/package.json
+10 verbose read json /Users/Jonas/Projects/repo/assemblejs/node_modules/prompt/package.json
+11 verbose read json /Users/Jonas/Projects/repo/assemblejs/node_modules/require/package.json
+12 verbose read json /Users/Jonas/Projects/repo/assemblejs/node_modules/shelljs/package.json
+13 verbose from cache /Users/Jonas/Projects/repo/assemblejs/package.json
+14 verbose readDependencies using package.json deps
+15 verbose cache add [ 'dot', null ]
+16 silly cache add name=undefined spec="dot" args=["dot",null]
+17 verbose parsed url { pathname: 'dot', path: 'dot', href: 'dot' }
+18 silly lockFile 348a3c4a-dot dot
+19 verbose lock dot /Users/Jonas/.npm/348a3c4a-dot.lock
+20 silly lockFile 348a3c4a-dot dot
+21 verbose addNamed [ 'dot', '' ]
+22 verbose addNamed [ null, '' ]
+23 silly lockFile 0f65e728-dot dot@
+24 verbose lock dot@ /Users/Jonas/.npm/0f65e728-dot.lock
+25 silly addNameRange { name: 'dot', range: '', hasData: false }
+26 verbose url raw dot
+27 verbose url resolving [ 'https://registry.npmjs.org/', './dot' ]
+28 verbose url resolved https://registry.npmjs.org/dot
+29 info trying registry request attempt 1 at 12:46:43
+30 http GET https://registry.npmjs.org/dot
+31 http 200 https://registry.npmjs.org/dot
+32 silly registry.get cb [ 200,
+32 silly registry.get   { vary: 'Accept',
+32 silly registry.get     server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+32 silly registry.get     etag: '"3PNY0T9O87XD1AZJCIJWJHS9J"',
+32 silly registry.get     date: 'Mon, 24 Dec 2012 20:45:31 GMT',
+32 silly registry.get     'content-type': 'application/json',
+32 silly registry.get     'content-length': '15054' } ]
+33 silly addNameRange number 2 { name: 'dot', range: '', hasData: true }
+34 silly addNameRange versions [ 'dot',
+34 silly addNameRange   [ '0.1.0',
+34 silly addNameRange     '0.1.1',
+34 silly addNameRange     '0.1.2',
+34 silly addNameRange     '0.1.3',
+34 silly addNameRange     '0.1.4',
+34 silly addNameRange     '0.1.5',
+34 silly addNameRange     '0.1.6',
+34 silly addNameRange     '0.1.7',
+34 silly addNameRange     '0.2.0',
+34 silly addNameRange     '0.2.1',
+34 silly addNameRange     '0.2.2',
+34 silly addNameRange     '0.2.3',
+34 silly addNameRange     '0.2.4',
+34 silly addNameRange     '0.2.5',
+34 silly addNameRange     '0.2.6',
+34 silly addNameRange     '1.0.0' ] ]
+35 verbose addNamed [ 'dot', '1.0.0' ]
+36 verbose addNamed [ '1.0.0', '1.0.0' ]
+37 silly lockFile 0c0387b0-dot-1-0-0 dot@1.0.0
+38 verbose lock dot@1.0.0 /Users/Jonas/.npm/0c0387b0-dot-1-0-0.lock
+39 silly lockFile f01d6c91-stry-npmjs-org-dot-dot-1-0-0-tgz https://registry.npmjs.org/dot/-/dot-1.0.0.tgz
+40 verbose lock https://registry.npmjs.org/dot/-/dot-1.0.0.tgz /Users/Jonas/.npm/f01d6c91-stry-npmjs-org-dot-dot-1-0-0-tgz.lock
+41 verbose addRemoteTarball [ 'https://registry.npmjs.org/dot/-/dot-1.0.0.tgz',
+41 verbose addRemoteTarball   'd3bb10a12c923590d23d15f77b15046a67e20683' ]
+42 info retry fetch attempt 1 at 12:46:44
+43 verbose fetch to= /var/folders/qd/dqmjjpb977b0q_893jytp8pc0000gn/T/npm-6002/1356382004584-0.7000685173552483/tmp.tgz
+44 http GET https://registry.npmjs.org/dot/-/dot-1.0.0.tgz
+45 http 200 https://registry.npmjs.org/dot/-/dot-1.0.0.tgz
+46 silly shasum updated bytes 6065
+47 info shasum d3bb10a12c923590d23d15f77b15046a67e20683
+47 info shasum /var/folders/qd/dqmjjpb977b0q_893jytp8pc0000gn/T/npm-6002/1356382004584-0.7000685173552483/tmp.tgz
+48 verbose tar unpack /var/folders/qd/dqmjjpb977b0q_893jytp8pc0000gn/T/npm-6002/1356382004584-0.7000685173552483/tmp.tgz
+49 silly lockFile 9631250e-04584-0-7000685173552483-package /var/folders/qd/dqmjjpb977b0q_893jytp8pc0000gn/T/npm-6002/1356382004584-0.7000685173552483/package
+50 verbose lock /var/folders/qd/dqmjjpb977b0q_893jytp8pc0000gn/T/npm-6002/1356382004584-0.7000685173552483/package /Users/Jonas/.npm/9631250e-04584-0-7000685173552483-package.lock
+51 silly gunzTarPerm modes [ '755', '644' ]
+52 silly gunzTarPerm extractEntry package.json
+53 silly gunzTarPerm extractEntry README.md
+54 silly gunzTarPerm extractEntry doT.js
+55 silly gunzTarPerm extractEntry index.js
+56 silly gunzTarPerm extractEntry bin/dottojs
+57 silly gunzTarPerm extractEntry LICENSE-DOT.txt
+58 silly gunzTarPerm extractEntry test/testdoT.js
+59 verbose read json /var/folders/qd/dqmjjpb977b0q_893jytp8pc0000gn/T/npm-6002/1356382004584-0.7000685173552483/package/package.json
+60 silly lockFile 9631250e-04584-0-7000685173552483-package /var/folders/qd/dqmjjpb977b0q_893jytp8pc0000gn/T/npm-6002/1356382004584-0.7000685173552483/package
+61 verbose from cache /var/folders/qd/dqmjjpb977b0q_893jytp8pc0000gn/T/npm-6002/1356382004584-0.7000685173552483/package/package.json
+62 verbose tar pack [ '/Users/Jonas/.npm/dot/1.0.0/package.tgz',
+62 verbose tar pack   '/var/folders/qd/dqmjjpb977b0q_893jytp8pc0000gn/T/npm-6002/1356382004584-0.7000685173552483/package' ]
+63 verbose tarball /Users/Jonas/.npm/dot/1.0.0/package.tgz
+64 verbose folder /var/folders/qd/dqmjjpb977b0q_893jytp8pc0000gn/T/npm-6002/1356382004584-0.7000685173552483/package
+65 silly lockFile 00d93e87--Jonas-npm-dot-1-0-0-package-tgz /Users/Jonas/.npm/dot/1.0.0/package.tgz
+66 verbose lock /Users/Jonas/.npm/dot/1.0.0/package.tgz /Users/Jonas/.npm/00d93e87--Jonas-npm-dot-1-0-0-package-tgz.lock
+67 silly lockFile 00d93e87--Jonas-npm-dot-1-0-0-package-tgz /Users/Jonas/.npm/dot/1.0.0/package.tgz
+68 silly lockFile 5cc9cb7c-sers-Jonas-npm-dot-1-0-0-package /Users/Jonas/.npm/dot/1.0.0/package
+69 verbose lock /Users/Jonas/.npm/dot/1.0.0/package /Users/Jonas/.npm/5cc9cb7c-sers-Jonas-npm-dot-1-0-0-package.lock
+70 silly lockFile 5cc9cb7c-sers-Jonas-npm-dot-1-0-0-package /Users/Jonas/.npm/dot/1.0.0/package
+71 verbose tar unpack /Users/Jonas/.npm/dot/1.0.0/package.tgz
+72 silly lockFile 5cc9cb7c-sers-Jonas-npm-dot-1-0-0-package /Users/Jonas/.npm/dot/1.0.0/package
+73 verbose lock /Users/Jonas/.npm/dot/1.0.0/package /Users/Jonas/.npm/5cc9cb7c-sers-Jonas-npm-dot-1-0-0-package.lock
+74 silly gunzTarPerm modes [ '755', '644' ]
+75 silly gunzTarPerm extractEntry package.json
+76 silly gunzTarPerm extractEntry README.md
+77 silly gunzTarPerm extractEntry doT.js
+78 silly gunzTarPerm extractEntry index.js
+79 silly gunzTarPerm extractEntry bin/dottojs
+80 silly gunzTarPerm extractEntry LICENSE-DOT.txt
+81 silly gunzTarPerm extractEntry test/testdoT.js
+82 verbose read json /Users/Jonas/.npm/dot/1.0.0/package/package.json
+83 silly lockFile 5cc9cb7c-sers-Jonas-npm-dot-1-0-0-package /Users/Jonas/.npm/dot/1.0.0/package
+84 silly shasum updated bytes 6065
+85 info shasum d3bb10a12c923590d23d15f77b15046a67e20683
+85 info shasum /Users/Jonas/.npm/dot/1.0.0/package.tgz
+86 verbose from cache /Users/Jonas/.npm/dot/1.0.0/package/package.json
+87 verbose chmod /Users/Jonas/.npm/dot/1.0.0/package.tgz 644
+88 verbose chown /Users/Jonas/.npm/dot/1.0.0/package.tgz [ 501, 20 ]
+89 silly lockFile f01d6c91-stry-npmjs-org-dot-dot-1-0-0-tgz https://registry.npmjs.org/dot/-/dot-1.0.0.tgz
+90 silly lockFile 0c0387b0-dot-1-0-0 dot@1.0.0
+91 silly lockFile 0f65e728-dot dot@
+92 silly resolved [ { name: 'dot',
+92 silly resolved     description: 'Concise and fast javascript templating compatible with nodejs and other javascript environments',
+92 silly resolved     keywords: [ 'template', 'fast', 'simple', 'templating' ],
+92 silly resolved     version: '1.0.0',
+92 silly resolved     main: 'index',
+92 silly resolved     bin: { dottojs: './bin/dottojs' },
+92 silly resolved     homepage: 'http://github.com/olado/doT',
+92 silly resolved     repository: { type: 'git', url: 'git://github.com/olado/doT.git' },
+92 silly resolved     author: { name: 'Laura Doktorova', email: 'ldoktorova@gmail.com' },
+92 silly resolved     engines: [ 'node >=0.2.6' ],
+92 silly resolved     scripts: { test: 'mocha' },
+92 silly resolved     dependencies: {},
+92 silly resolved     devDependencies:
+92 silly resolved      { commander: '*',
+92 silly resolved        'uglify-js': '*',
+92 silly resolved        mkdirp: '*',
+92 silly resolved        mocha: '*',
+92 silly resolved        jshint: '*' },
+92 silly resolved     readme: 'Created in search of the fastest and concise JavaScript templating function with emphasis on performance under V8 and nodejs. It shows great performance for both nodejs and browsers.\n\ndoT.js is fast, small and has no dependencies.\n\n## Features:\n    custom delimiters\n    runtime evaluation\n    runtime interpolation\n    compile-time evaluation\n    partials support\n    conditionals support\n    array iterators\n    encoding\n    control whitespace - strip or preserve\n    streaming friendly\n    use it as logic-less or with logic, it is up to you\n\n## Docs, live playground and samples:\n\nhttp://olado.github.com/doT (todo: update docs with new features added in version 1.0.0)\n\n## New in version 1.0.0:\n\nCompile tool to compile dot templates into js (thanks to @Katahdin https://github.com/Katahdin/dot-packer ):\n\n\t./bin/dottojs -s examples/views -d out/views\n\nNode module now supports auto-compilation of dot templates from specified path: (see index.js)\n\n\tvar dots = require("dot").process({ path: "./views"});\n\nAdded parameters support in partials:\n\n\t{{##def.macro:param:\n\t\t<div>{{=param.foo}}</div>\n\t#}}\n\n\t{{#def.macro:myvariable}}\n\n## Notes:\n    doU.js is here only so that legacy external tests do not break. Use doT.js.\n    doT.js with doT.templateSettings.append=false provides the same performance as doU.js.\n\n## Author:\nLaura Doktorova @olado\n\n## License:\ndoT is licensed under the MIT License. (See LICENSE-DOT)\n',
+92 silly resolved     readmeFilename: 'README.md',
+92 silly resolved     _id: 'dot@1.0.0',
+92 silly resolved     dist: { shasum: 'd3bb10a12c923590d23d15f77b15046a67e20683' },
+92 silly resolved     _from: 'dot' } ]
+93 info install dot@1.0.0 into /Users/Jonas/Projects/repo/assemblejs
+94 info installOne dot@1.0.0
+95 error git Appears to be a git repo or submodule.
+95 error git     /Users/Jonas/Projects/repo/assemblejs/node_modules/dot
+95 error git Refusing to remove it. Update manually,
+95 error git or move it out of the way first.
+96 error System Darwin 12.2.1
+97 error command "node" "/usr/local/bin/npm" "install" "dot"
+98 error cwd /Users/Jonas/Projects/repo/assemblejs/lib
+99 error node -v v0.8.15
+100 error npm -v 1.1.66
+101 error path /Users/Jonas/Projects/repo/assemblejs/node_modules/dot
+102 error code EISGIT
+103 verbose exit [ 1, true ]

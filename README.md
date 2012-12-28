@@ -30,7 +30,7 @@ Env.getValue('my-key');
 
 ## Routing
 
-The **.htaccess** file included forces all requests to **index.html**.  Push state is enabled by default, and all routing gets handled in **routing.js**.
+**router.js** is where the routing is defined, and acts as the controller for the application.  The **.htaccess** file included forces all requests to **index.html**.  Push state is enabled by default, and falls back to #hash if the browser does not support it.
 
 ## Build.sh
 
@@ -48,3 +48,5 @@ This will do the following things in the following order:
 3. runs r.js to optimize your Javascript source files into one file: **build/output/assets/js/main-build.js**
 
 4. in **output/index.html**, replaces the `src` attribute with the new compiled javascript file, and removes the require-js data-main property
+
+## Credits

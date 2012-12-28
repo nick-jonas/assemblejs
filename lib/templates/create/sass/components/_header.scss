@@ -1,0 +1,18 @@
+.header{
+    .logo{
+        font-family:$logoFont;
+        font-size:100px;
+        font-weight:500;
+        color:$logoTextColor;
+        text-align:center;
+        text-rendering: optimizeLegibility;
+        text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.333), 1px 1px 1px white;
+    }
+    .tagline{
+        font-family:$taglineFont;
+        font-size:30px;
+        font-weight:500;
+        color:$extraDarkGrey;
+        text-align:center;
+    }
+}
