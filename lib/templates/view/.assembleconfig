@@ -9,7 +9,7 @@
     },
     {
         "input_file"        : "/boilerplate_view.js",
-        "output_file_dir"   : "src/views/",
+        "output_file_dir"   : "src/views/sections/",
         "output_file_name"  : "<%=name%>View.js"
     }]
 }
