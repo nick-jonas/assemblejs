@@ -13,14 +13,12 @@ Thumbs.db
 ########################
 app/.sass-cache
 app/sass/.sass-cache
-
-# Build Directory #
-###################
-build/output
-
-
 *.scssc
 
 # Node Dependencies #
 #####################
 node_modules
+
+# Development #
+#####################
+examples
