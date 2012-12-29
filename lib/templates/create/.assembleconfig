@@ -1,5 +1,6 @@
 {
     "output_file_dir"   : "/",
-    "file_filter"       : ["!.svn", "!.git", "!.DS_Store", "!thumbs.db", "!.sass-cache"],
-    "templates" : []
+    "file_filter"       : ["!.DS_Store", "!thumbs.db"],
+    "dir_filter"        : ["!.svn", "!.git", "!.sass-cache"],
+    "templates"         : []
 }

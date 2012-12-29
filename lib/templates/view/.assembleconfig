@@ -1,6 +1,7 @@
 {
     "output_file_dir"   : "/",
-    "file_filter"       : ["!.svn", "!.git", "!.DS_Store", "!thumbs.db", "!.sass-cache"],
+    "file_filter"       : ["!.DS_Store", "!thumbs.db"],
+    "dir_filter"        : ["!.svn", "!.git", "!.sass-cache"],
     "templates" : [
     {
         "input_file"        : "/boilerplate_template.html",
