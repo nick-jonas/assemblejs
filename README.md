@@ -1,7 +1,8 @@
-![GitHub Logo](http://nick-jonas.github.com/assemblejs/logo.png)
+#AssembleJS
 
 [![Build Status](https://travis-ci.org/nick-jonas/assemblejs.png?branch=master)](https://travis-ci.org/nick-jonas/assemblejs)
 
+#### A light framework for fast front-end development based on Backbone, RequireJS, SASS, and Twitter Bootstrap.
 
 ## Requirements
 
