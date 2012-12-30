@@ -25,13 +25,15 @@
   "dependencies": {
     "lodash": "latest",
     "commander": "latest",
+    "minimatch": "0.2.9",
     "prompt": "latest",
     "mkdirp": "latest",
     "fs-extra": ">=0.3.2",
-    "shelljs": ">=0.1.0",
-    "vows":">=0.7.0"
+    "shelljs": ">=0.1.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "vows": ">=0.7.0"
+  },
   "bundledDependencies": [],
   "scripts": {
     "test": "vows test/*.js --spec"
