@@ -1,5 +1,4 @@
 ![GitHub Logo](http://nick-jonas.github.com/assemblejs/logo.png)
-Format: ![Alt Text](http://github.com/nick-jonas/assemblejs)
 
 [![Build Status](https://travis-ci.org/nick-jonas/assemblejs.png?branch=master)](https://travis-ci.org/nick-jonas/assemblejs)
 
