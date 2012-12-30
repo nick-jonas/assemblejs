@@ -16,14 +16,14 @@ Structure of test bed:
     │   ├── root_dir1_subdir1
     │   │   └── root1_dir1_subdir1_file1.ext1
     │   └── root_dir1_subdir2
-    │       └── .gitignore
+    │       └── test.js
     ├── root_dir2
     │   ├── root_dir2_file1.ext1
     │   ├── root_dir2_file2.ext2
     │   ├── root_dir2_subdir1
-    │   │   └── .gitignore
+    │   │   └── test.js
     │   └── root_dir2_subdir2
-    │       └── .gitignore
+    │       └── test.js
     ├── root_file1.ext1
     ├── root_file2.ext2
     └── root_file3.ext3
@@ -56,7 +56,7 @@ vows.describe('Read Directory').addBatch({
     'with excluding file and directory filters': {
         topic: function(){
             reader.readDir(path.join(__dirname, 'bed'), this.callback, {
-                'fileFilter': ['!.gitignore'],
+                'fileFilter': ['!test.js'],
                 'dirFilter': ['!root_dir1']
             });
         },
@@ -69,13 +69,13 @@ vows.describe('Read Directory').addBatch({
         },
         'does not contain .gitnore files': function(err, files){
             var filenames = _.pluck(files, 'filename');
-            assert.equal(_.indexOf(filenames, '.gitignore'), -1);
+            assert.equal(_.indexOf(filenames, 'test.js'), -1);
         }
     },
     'with mixed inclusive and exclusive':{
         topic: function(){
             reader.readDir(path.join(__dirname, 'bed'), this.callback, {
-                'fileFilter': ['!.gitignore'],
+                'fileFilter': ['!test.js'],
                 'dirFilter': ['root_dir1']
             });
         },
@@ -88,7 +88,7 @@ vows.describe('Read Directory').addBatch({
         },
         'does not contain .gitnore files': function(err, files){
             var filenames = _.pluck(files, 'filename');
-            assert.equal(_.indexOf(filenames, '.gitignore'), -1);
+            assert.equal(_.indexOf(filenames, 'test.js'), -1);
         },
         'only recursed into root and `root_dir1` directory': function(err, files){
             var filedirs = _.pluck(files, 'filedir');
