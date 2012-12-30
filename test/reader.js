@@ -67,7 +67,7 @@ vows.describe('Read Directory').addBatch({
         'returns 5 files': function(err, files){
             assert.equal(files.length, 5);
         },
-        'does not contain .gitnore files': function(err, files){
+        'does not contain test.js files': function(err, files){
             var filenames = _.pluck(files, 'filename');
             assert.equal(_.indexOf(filenames, 'test.js'), -1);
         }
@@ -84,9 +84,10 @@ vows.describe('Read Directory').addBatch({
             assert.isArray(files);
         },
         'returns 6 files': function(err, files){
+            console.log(_.pluck(files, 'filename'));
             assert.equal(files.length, 6);
         },
-        'does not contain .gitnore files': function(err, files){
+        'does not contain test.js files': function(err, files){
             var filenames = _.pluck(files, 'filename');
             assert.equal(_.indexOf(filenames, 'test.js'), -1);
         },
