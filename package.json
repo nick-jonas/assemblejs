@@ -34,7 +34,7 @@
   "devDependencies": {},
   "bundledDependencies": [],
   "scripts": {
-    "test": "vows test/* --spec"
+    "test": "vows test/*.js --spec"
   },
   "license": "MIT",
   "engines": {

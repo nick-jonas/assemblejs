@@ -1,4 +1,5 @@
-# Require / Backbone / Handlebars
+# AssembleJS
+[![Build Status](https://travis-ci.org/nick-jonas/assemblejs.png?branch=master)](https://travis-ci.org/nick-jonas/assemblejs)
 
 
 ## Requirements

@@ -15,8 +15,8 @@ vows.describe('Read Directory').addBatch({
             assert.isNull(err);
             assert.isArray(files);
         },
-        'returns 12 files': function(err, files){
-            assert.equal(files.length, 12);
+        'returns 15 files': function(err, files){
+            assert.equal(files.length, 15);
         },
         'first item has properties': function(err, files){
             assert.isObject(files[0]);
@@ -28,7 +28,7 @@ vows.describe('Read Directory').addBatch({
     'with excluding file and directory filters': {
         topic: function(){
             reader.readDir(path.join(__dirname, 'bed'), this.callback, {
-                'fileFilter': ['!.gitignore'],
+                'fileFilter': ['!.gitignore', '!.DS_Store'],
                 'dirFilter': ['!root_dir1']
             });
         },
@@ -47,7 +47,7 @@ vows.describe('Read Directory').addBatch({
     'with mixed inclusive and exclusive':{
         topic: function(){
             reader.readDir(path.join(__dirname, 'bed'), this.callback, {
-                'fileFilter': ['!.gitignore'],
+                'fileFilter': ['!.gitignore', '!.DS_Store'],
                 'dirFilter': ['root_dir1']
             });
         },
@@ -78,8 +78,8 @@ vows.describe('Read Directory').addBatch({
             assert.isNull(err);
             assert.isArray(files);
         },
-        'returns 7 files': function(err, files){
-            assert.equal(files.length, 7);
+        'returns 9 files': function(err, files){
+            assert.equal(files.length, 9);
         },
         'does not contain directory with root_dir1': function(err, files){
             var filedirs = _.pluck(files, 'filedir'),
@@ -90,4 +90,4 @@ vows.describe('Read Directory').addBatch({
             }
         }
     }
-}).run();
+}).export(module);
