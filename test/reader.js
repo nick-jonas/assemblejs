@@ -3,7 +3,35 @@ var _ = require('lodash'),
     path = require('path'),
     assert = require('assert'),
     fs = require('fs'),
+    os = require('os'),
     reader = require('../lib/commands/reader');
+
+/*
+Structure of test bed:
+    .
+    ├── root_dir1
+    │   ├── root_dir1_file1.ext1
+    │   ├── root_dir1_file2.ext2
+    │   ├── root_dir1_file3.ext3
+    │   ├── root_dir1_subdir1
+    │   │   └── root1_dir1_subdir1_file1.ext1
+    │   └── root_dir1_subdir2
+    │       └── .gitignore
+    ├── root_dir2
+    │   ├── root_dir2_file1.ext1
+    │   ├── root_dir2_file2.ext2
+    │   ├── root_dir2_subdir1
+    │   │   └── .gitignore
+    │   └── root_dir2_subdir2
+    │       └── .gitignore
+    ├── root_file1.ext1
+    ├── root_file2.ext2
+    └── root_file3.ext3
+
+    6 directories, 12 files
+*/
+
+
 
 // test walk
 vows.describe('Read Directory').addBatch({
@@ -15,8 +43,8 @@ vows.describe('Read Directory').addBatch({
             assert.isNull(err);
             assert.isArray(files);
         },
-        'returns 15 files': function(err, files){
-            assert.equal(files.length, 15);
+        'returns 12 files': function(err, files){
+            assert.equal(files.length, 12);
         },
         'first item has properties': function(err, files){
             assert.isObject(files[0]);
@@ -28,7 +56,7 @@ vows.describe('Read Directory').addBatch({
     'with excluding file and directory filters': {
         topic: function(){
             reader.readDir(path.join(__dirname, 'bed'), this.callback, {
-                'fileFilter': ['!.gitignore', '!.DS_Store'],
+                'fileFilter': ['!.gitignore'],
                 'dirFilter': ['!root_dir1']
             });
         },
@@ -47,7 +75,7 @@ vows.describe('Read Directory').addBatch({
     'with mixed inclusive and exclusive':{
         topic: function(){
             reader.readDir(path.join(__dirname, 'bed'), this.callback, {
-                'fileFilter': ['!.gitignore', '!.DS_Store'],
+                'fileFilter': ['!.gitignore'],
                 'dirFilter': ['root_dir1']
             });
         },
@@ -78,8 +106,8 @@ vows.describe('Read Directory').addBatch({
             assert.isNull(err);
             assert.isArray(files);
         },
-        'returns 9 files': function(err, files){
-            assert.equal(files.length, 9);
+        'returns 7 files': function(err, files){
+            assert.equal(files.length, 7);
         },
         'does not contain directory with root_dir1': function(err, files){
             var filedirs = _.pluck(files, 'filedir'),
