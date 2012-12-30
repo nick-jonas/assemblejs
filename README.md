@@ -1,4 +1,6 @@
-# AssembleJS
+![GitHub Logo](/logo.png)
+Format: ![Alt Text](https://github.com/nick-jonas/assemblejs)
+
 [![Build Status](https://travis-ci.org/nick-jonas/assemblejs.png?branch=master)](https://travis-ci.org/nick-jonas/assemblejs)
 
 
@@ -17,7 +19,7 @@ This is your development/working directory.  It includes your index.html, .hatac
 
 ## Environment Specific Paths
 
-You can set environment specific paths in **utils/env.js**.  By setting the `ajax_prefilter` property, all AJAX requests will prepend this path to the request url.  To get the environment id (i.e. "Local", "Dev", "Prod") at any point in the application, make sure you include `utils/env` in your module dependency array, and call
+You can set environment specific paths in **utils/env.js**.  By setting the `ajax_prefilter` property, all AJAX requests will prepend this path to the request https://github.com/nick-jonas/assemblejs.  To get the environment id (i.e. "Local", "Dev", "Prod") at any point in the application, make sure you include `utils/env` in your module dependency array, and call
 
 ```javascript
 Env.getID();
