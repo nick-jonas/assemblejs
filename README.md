@@ -10,7 +10,6 @@ As far as level of understanding, it would best to be familiar first with Backbo
 
 ```bash
 assemble init
-assemble -i
 ```
 
 Creates a new project in the current directory.
@@ -18,7 +17,6 @@ Creates a new project in the current directory.
 
 ```bash
 assemble watch
-assemble -w
 ```
 
 Watches your SASS files via Compass.
@@ -26,7 +24,6 @@ Watches your SASS files via Compass.
 
 ```bash
 assemble view
-assemble -v
 ```
 
 Creates a Backbone View and Handlebars Template based on a name and description
