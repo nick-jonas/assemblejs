@@ -8,6 +8,45 @@
 
 As far as level of understanding, it would best to be familiar first with Backbone and RequireJS.  When running the build script, you will need node and compass installed.
 
+```bash
+assemble init
+assemble -i
+```
+
+Creates a new project in the current directory.
+
+
+```bash
+assemble watch
+assemble -w
+```
+
+Watches your SASS files via Compass.
+
+
+```bash
+assemble view
+assemble -v
+```
+
+Creates a Backbone View and Handlebars Template based on a name and description
+
+
+```bash
+assemble build
+```
+
+This will compile a production-ready build to www_public, doing the following steps:
+
+1. compile the SASS into a main.css file
+
+2. copies the entire **app/** folder (except for the **app/src/** folder to **build/output/**)
+
+3. runs r.js to optimize your Javascript source files into one file: **build/output/assets/js/main-build.js**
+
+4. in **output/index.html**, replaces the `src` attribute with the new compiled javascript file, and removes the require-js data-main property
+
+
 ## Structure
 
 ### /app
@@ -16,6 +55,7 @@ This is your development/working directory.  It includes your index.html, .hatac
 
 ### /build
 
+This directory contains a useful bash script `update_requirejs.sh` for updating the require.js library, the `r.js` compiler used by the build system, and `app.build.js` which should map to `app/src/config.js`
 
 ## Environment Specific Paths
 
@@ -35,21 +75,6 @@ Env.getValue('my-key');
 
 **router.js** is where the routing is defined, and acts as the controller for the application.  The **.htaccess** file included forces all requests to **index.html**.  Push state is enabled by default, and falls back to #hash if the browser does not support it.
 
-## Build.sh
-
-For production-ready files, run the build script **build/build.sh** by navigating to the build/ directory and running:
-
-```bash
-./build.sh
-```
-This will do the following things in the following order:
-
-1. compile the SASS into a main.css file
-
-2. copies the entire **app/** folder (except for the **app/src/** folder to **build/output/**)
-
-3. runs r.js to optimize your Javascript source files into one file: **build/output/assets/js/main-build.js**
-
-4. in **output/index.html**, replaces the `src` attribute with the new compiled javascript file, and removes the require-js data-main property
-
 ## Credits
+
+Inspiration along the way taken from Grunt, Yeoman & Roots.cx
