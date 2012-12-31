@@ -21,4 +21,5 @@ node_modules
 
 # Development #
 #####################
-example
+dev_scripts
+dev_bed

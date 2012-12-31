@@ -2,7 +2,7 @@
 
 #AssembleJS
 
-##### A light framework for fast front-end development based on Backbone, RequireJS, SASS, and Twitter Bootstrap.
+##### A light bootstrap for fast front-end development based on Backbone, RequireJS, SASS, and Twitter Bootstrap.
 
 ## Requirements
 
