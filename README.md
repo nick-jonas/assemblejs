@@ -2,7 +2,11 @@
 
 #AssembleJS
 
-##### A light bootstrap for fast front-end development based on Backbone, RequireJS, SASS, and Twitter Bootstrap.
+##### A light bootstrap for fast front-end development based on Backbone, Handlebars, RequireJS, SASS, and Twitter Bootstrap.
+
+## About
+
+The focus of Assemble is to get up and running quickly with a collaborative application bootstrap, getting as much of the painful overhead out of the way without imposing too many dependencies.  The HTML partials are [Handlebars](http://handlebarsjs.com/)-compiled templates. I decided not to use JS preprocessing (Coffeescript, Typekit), and for CSS pre-processing, I decided to use [Compass](http://compass-style.org/) with the [Twitter Bootstrap](http://twitter.github.com/bootstrap/) [port for SASS](https://github.com/jlong/sass-twitter-bootstrap).  If anyone has strong opinions against these choices, I'm open to opinions.  The goal is to allow for dependency options when building a project, similar to [Yeoman](http://yeoman.io/).
 
 ## Requirements
 
@@ -82,4 +86,4 @@ Env.getValue('my-key');
 
 ## Credits
 
-Inspiration along the way taken from Grunt, Yeoman & Roots.cx
+Inspiration along the way taken from Grunt, [Yeoman](http://yeoman.io/) & [Roots](Roots.cx).
