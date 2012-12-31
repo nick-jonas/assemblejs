@@ -8,6 +8,14 @@
 
 As far as level of understanding, it would best to be familiar first with Backbone and RequireJS.  When running the build script, you will need node and compass installed.
 
+## Installation
+
+```bash
+npm install -g
+```
+
+## Usage
+
 ```bash
 assemble init
 ```
