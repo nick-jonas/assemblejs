@@ -15,6 +15,7 @@ program
     .option('-b, --build', 'Build production-ready files')
     .option('-m, --model', 'Add a model by the specified name')
     .option('-v, --view', 'Add a view by the specified name')
+    .option('-r, --reset', 'Reset project')
     .option('-c, --collection', 'Add a collection by the specified name')
     .parse(process.argv);
 
@@ -39,8 +40,15 @@ if(program.init){
 
 // command: watch
 if(program.watch){
-    // TODO
-    // compile SASS, start local server
+    commands.watch.execute();
+}
+
+if(program.build){
+    commands.build.execute();
+}
+
+if(program.reset){
+    commands.reset.execute();
 }
 
 // command: model

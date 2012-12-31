@@ -24,21 +24,7 @@
 @import "variables";
 @import "mixins";
 
-// components
-@import "components/header";
-
-// sections
+/* ----- COMPONENTS ------ */
 
 
-// other
-body{
-    background:$siteBgColor;
-}
-
-a{
-    text-decoration:none;
-    color:$linkColor;
-    &:hover{
-        color: $linkHighlightColor;
-    }
-}
+/* ------ SECTIONS ------- */

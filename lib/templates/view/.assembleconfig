@@ -5,12 +5,12 @@
     "templates" : [
     {
         "input_file"        : "/boilerplate_template.html",
-        "output_file_dir"   : "src/template/sections/",
+        "output_file_dir"   : "app/src/template/sections/",
         "output_file_name"  : "<%=name%>_template.html"
     },
     {
         "input_file"        : "/boilerplate_view.js",
-        "output_file_dir"   : "src/views/sections/",
+        "output_file_dir"   : "app/src/views/sections/",
         "output_file_name"  : "<%=name%>View.js"
     }]
 }
