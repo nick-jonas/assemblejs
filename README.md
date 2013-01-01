@@ -15,6 +15,7 @@ I'd love to get feedback on whether this is too opinionated, or if there are bet
 As far as level of understanding, it would best to be familiar first with Backbone and RequireJS.  You must the following installed:
 
 -[NodeJS](http://nodejs.org/) >=v0.6.0
+
 -[NPM](https://npmjs.org/)
 
 
