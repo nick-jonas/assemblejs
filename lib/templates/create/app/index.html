@@ -18,7 +18,11 @@
 
     <body>
 
-        <script data-main="src/config" src="src/libs/require.js"></script>
+        <script id="require-lib" data-main="src/config" src="src/libs/require.js"></script>
+
+
+        <script id="live-reload">// live reload snippet, this is removed by build script for production
+        document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 
     </body>
 

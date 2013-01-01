@@ -29,7 +29,9 @@
     "prompt": "latest",
     "mkdirp": "latest",
     "fs-extra": ">=0.3.2",
-    "shelljs": ">=0.1.0"
+    "shelljs": ">=0.1.0",
+    "cheerio": ">=0.10.5",
+    "readdirp": ">=0.2.1"
   },
   "devDependencies": {
     "vows": ">=0.7.0"
