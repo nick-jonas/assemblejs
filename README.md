@@ -17,7 +17,15 @@ As far as level of understanding, it would best to be familiar first with Backbo
 ## Installation
 
 ```bash
+git clone https://github.com/nick-jonas/assemblejs.git
 npm install -g
+```
+
+*OR*
+
+
+```bash
+npm install -g assemblejs
 ```
 
 ## Usage
