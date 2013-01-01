@@ -51,17 +51,17 @@ Creates a new project in the current directory.
 assemble watch
 ```
 
-Automaticaly compiles your SASS files on save, lints your Javascript, starts a local Python web-server, and opens your browser pointed to it.
+Automatically compiles your SASS files on save, lints your Javascript, starts a local Python web-server, and opens your browser pointed to it.
 
 ---
 
-### Create new View
+### Create new view
 
 ```bash
 assemble view
 ```
 
-Creates a Backbone View and Handlebars Template based on a name and description
+Creates a Backbone View and Handlebars Template based on a provided name and description
 
 ---
 
