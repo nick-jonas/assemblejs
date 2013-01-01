@@ -12,7 +12,7 @@ I'd love to get feedback on whether this is too opinionated, or if there are bet
 
 ## Requirements
 
-As far as level of understanding, it would best to be familiar first with Backbone and RequireJS.  When running the build script, you will need node and compass installed.
+As far as level of understanding, it would best to be familiar first with Backbone and RequireJS.
 
 ## Installation
 
@@ -28,12 +28,16 @@ assemble init
 
 Creates a new project in the current directory.
 
+---
+
 
 ```bash
 assemble watch
 ```
 
-Watches your SASS files via Compass.
+Automaticaly compiles your SASS files on save, lints your Javascript, starts a local Python web-server, and opens your browser pointed to it.
+
+---
 
 
 ```bash
@@ -41,6 +45,8 @@ assemble view
 ```
 
 Creates a Backbone View and Handlebars Template based on a name and description
+
+---
 
 
 ```bash
