@@ -12,7 +12,11 @@ I'd love to get feedback on whether this is too opinionated, or if there are bet
 
 ## Requirements
 
-As far as level of understanding, it would best to be familiar first with Backbone and RequireJS.
+As far as level of understanding, it would best to be familiar first with Backbone and RequireJS.  You must the following installed:
+
+    -[NodeJS](http://nodejs.org/) >=v0.6.0
+    -[NPM](https://npmjs.org/)
+
 
 ## Installation
 
@@ -21,7 +25,7 @@ git clone https://github.com/nick-jonas/assemblejs.git
 npm install -g
 ```
 
-*OR*
+or
 
 
 ```bash
