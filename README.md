@@ -35,6 +35,8 @@ npm install -g assemblejs
 
 ## Usage
 
+### Create New Project
+
 ```bash
 assemble init
 ```
