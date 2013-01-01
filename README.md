@@ -45,6 +45,7 @@ Creates a new project in the current directory.
 
 ---
 
+### Watch Project
 
 ```bash
 assemble watch
@@ -54,6 +55,7 @@ Automaticaly compiles your SASS files on save, lints your Javascript, starts a l
 
 ---
 
+### Create new View
 
 ```bash
 assemble view
@@ -63,6 +65,7 @@ Creates a Backbone View and Handlebars Template based on a name and description
 
 ---
 
+### Build for production
 
 ```bash
 assemble build
