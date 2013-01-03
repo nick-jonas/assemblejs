@@ -12,5 +12,10 @@
         "input_file"        : "/boilerplate_view.js",
         "output_file_dir"   : "app/src/views/sections/",
         "output_file_name"  : "<%=name%>View.js"
+    },
+    {
+        "input_file"        : "/boilerplate_style.scss",
+        "output_file_dir"   : "app/src/sass/sections/",
+        "output_file_name"  : "_<%=name%>.js"
     }]
 }

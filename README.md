@@ -12,12 +12,25 @@ I'd love to get feedback on whether this is too opinionated, or if there are bet
 
 ## Requirements
 
-As far as level of understanding, it would best to be familiar first with Backbone and RequireJS.  You must the following installed:
+As far as level of understanding, it would best to be familiar first with Backbone and RequireJS.
+
+You must have the following installed:
 
 -[NodeJS](http://nodejs.org/) >=v0.6.0
 
 -[NPM](https://npmjs.org/)
 
+-[SASS-Globbing](https://github.com/chriseppstein/sass-globbing);
+
+```bash
+$ gem install sass-globbing`
+```
+
+-[Compass-rgbapng](https://github.com/aaronrussell/compass-rgbapng);
+
+```bash
+$ gem install compass-rgbapng
+```
 
 ## Installation
 
