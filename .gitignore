@@ -23,3 +23,7 @@ node_modules
 #####################
 dev_scripts
 dev_bed
+
+# Testing #
+#####################
+test/testproj

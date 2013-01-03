@@ -28,13 +28,32 @@ prompt.start();
 
 // command: init
 if(program.init){
-    promptClassBuild('project', function(className, desc){
-        var data = {
-            'name' : className,
-            'description' : desc
-        };
+    prompt.get([{
+            'name': 'className',
+            'description': 'Enter the project name',
+            'type': 'string',
+            'required': true
+        }, {
+            'name': 'classDesc',
+            'description': 'Enter a description',
+            'type': 'string'
+        }, {
+            'name': 'path',
+            'description': 'Enter the path relative to this directory.',
+            'default': '.',
+            'type': 'string'
+        }],
+        function(err, result){
+            var data = {
+                'name' : sanitizeClassName(result.className),
+                'description' : result.classDesc,
+                'path' : path.resolve(result.path)
+            };
         // write files
-        commands.write.execute(path.join(__dirname, '../lib/templates/create/'), data);
+        commands.write.execute(path.join(__dirname, '../lib/templates/create/'), data, function(err, result){
+            if(err) throw err;
+            console.log('✓ Successfully created project');
+        });
     });
 }
 
@@ -67,7 +86,10 @@ if(program.view){
             'description' : desc
         };
         // write files
-        commands.write.execute(path.join(__dirname, '../lib/templates/view/'), data);
+        commands.write.execute(path.join(__dirname, '../lib/templates/view/'), data, function(err, result){
+            if(err) throw err;
+            console.log('✓ Successfully created view files');
+        });
     });
 }
 
