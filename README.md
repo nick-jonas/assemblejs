@@ -37,15 +37,15 @@ $ gem install compass-rgbapng
 clone the repo
 
 ```bash
-git clone https://github.com/nick-jonas/assemblejs.git
-npm install -g
+$ git clone https://github.com/nick-jonas/assemblejs.git
+$ npm install -g
 ```
 
 or direct from npm
 
 
 ```bash
-npm install -g assemblejs
+$ npm install -g assemblejs
 ```
 
 ## Usage
@@ -53,7 +53,7 @@ npm install -g assemblejs
 ### Create New Project
 
 ```bash
-assemble init
+$ assemble init
 ```
 
 Creates a new project in the current directory.
@@ -63,7 +63,7 @@ Creates a new project in the current directory.
 ### Watch Project
 
 ```bash
-assemble watch
+$ assemble watch
 ```
 
 Automatically compiles your SASS files on save, lints your Javascript, starts a local Python web-server, and opens your browser pointed to it.
@@ -73,7 +73,7 @@ Automatically compiles your SASS files on save, lints your Javascript, starts a 
 ### Create new view
 
 ```bash
-assemble view
+$ assemble view
 ```
 
 Creates a Backbone View, SASS partial, and Handlebars Template based on a provided name and description
@@ -83,7 +83,7 @@ Creates a Backbone View, SASS partial, and Handlebars Template based on a provid
 ### Build for production
 
 ```bash
-assemble build
+$ assemble build
 ```
 
 This will compile a production-ready build to www_public, doing the following steps:
