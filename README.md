@@ -16,17 +16,17 @@ As far as level of understanding, it would best to be familiar first with Backbo
 
 You must have the following installed:
 
--[NodeJS](http://nodejs.org/) >=v0.6.0
+[nodejs](http://nodejs.org/) >=v0.6.0
 
--[NPM](https://npmjs.org/)
+[npm](https://npmjs.org/)
 
--[SASS-Globbing](https://github.com/chriseppstein/sass-globbing);
+[sass-globbing](https://github.com/chriseppstein/sass-globbing)
 
 ```bash
-$ gem install sass-globbing`
+$ gem install sass-globbing
 ```
 
--[Compass-rgbapng](https://github.com/aaronrussell/compass-rgbapng);
+[compass-rgbapng](https://github.com/aaronrussell/compass-rgbapng)
 
 ```bash
 $ gem install compass-rgbapng
@@ -34,12 +34,14 @@ $ gem install compass-rgbapng
 
 ## Installation
 
+clone the repo
+
 ```bash
 git clone https://github.com/nick-jonas/assemblejs.git
 npm install -g
 ```
 
-or
+or direct from npm
 
 
 ```bash
@@ -74,7 +76,7 @@ Automatically compiles your SASS files on save, lints your Javascript, starts a 
 assemble view
 ```
 
-Creates a Backbone View and Handlebars Template based on a provided name and description
+Creates a Backbone View, SASS partial, and Handlebars Template based on a provided name and description
 
 ---
 
@@ -99,7 +101,7 @@ This will compile a production-ready build to www_public, doing the following st
 
 ### /app
 
-This is your development/working directory.  It includes your index.html, .hataccess, static asset files (compiled css, img, json, svg, video files), and your javascript application files are all within `src`.  *Note:* It's recommended to use the `build/build.sh` file to create production-ready files.
+This is your development/working directory.  It includes your index.html, .hataccess, static asset files (compiled css, img, json, svg, video files), and your javascript application files are all within `src`.
 
 ### /build
 
@@ -125,4 +127,4 @@ Env.getValue('my-key');
 
 ## Credits
 
-Inspiration along the way taken from Grunt, [Yeoman](http://yeoman.io/) & [Roots](Roots.cx).
+Inspiration along the way taken from [Grunt](http://gruntjs.com/), [Yeoman](http://yeoman.io/) & [Roots](Roots.cx).
