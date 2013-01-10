@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 var commands = require('../lib/commands'),
+    utils = require('../lib/utils'),
     _ = require('lodash'),
     path = require('path'),
     program = require('commander'),
@@ -22,8 +23,6 @@ program
 // customize prompt message
 // prompt.message + prompt.delimiter + property.message + prompt.delimiter;
 prompt.message = 'AssembleJS'.magenta;
-prompt.delimiter = ":: ".cyan;
-prompt.start();
 
 
 // command: init
@@ -39,18 +38,18 @@ if(program.init){
             'type': 'string'
         }, {
             'name': 'path',
-            'description': 'Enter the path relative to this directory.',
+            'description': 'Enter the path relative to this directory',
             'default': '.',
             'type': 'string'
         }],
         function(err, result){
             var data = {
-                'name' : sanitizeClassName(result.className),
+                'name' : utils.sanitizeClassName(result.className),
                 'description' : result.classDesc,
                 'path' : path.resolve(result.path)
             };
         // write files
-        commands.write.execute(path.join(__dirname, '../lib/templates/create/'), data, function(err, result){
+        commands.write.execute(path.join(__dirname, '../lib/templates/create/'), data, function(err, vars, result){
             if(err) throw err;
             console.log('✓ Successfully created project');
         });
@@ -86,7 +85,7 @@ if(program.view){
             'description' : desc
         };
         // write files
-        commands.write.execute(path.join(__dirname, '../lib/templates/view/'), data, function(err, result){
+        commands.write.execute(path.join(__dirname, '../lib/templates/view/'), data, function(err, vars, result){
             if(err) throw err;
             console.log('✓ Successfully created view files');
         });
@@ -118,29 +117,8 @@ function promptClassBuild(name, onComplete){
             type: 'string'
         }],
         function(err, result){
-            var className = sanitizeClassName(result.className);
+            var className = utils.sanitizeClassName(result.className);
             onComplete.apply(this, [className, result.classDesc]);
     });
 }
 
-/*
-    Takes user input and sanitizes for a class name
-    example: zoo keeper -> ZooKeeper
-*/
-function sanitizeClassName(name){
-    var sName = name,
-        allWords = sName.split(/\s+/g),
-        i = 0;
-
-    // split and capitalize first letter of each word
-    for(i; i < allWords.length; i++){
-        // TODO: replace numbers with the number written out (i.e. 9 -> Nine)
-        allWords[i] = allWords[i].charAt(0).toUpperCase() + allWords[i].slice(1);
-    }
-
-    // join into one word
-    sName = allWords.join('');
-    if(name !== sName) console.log('Sanitized class name: ' + name + ' -> ' + sName);
-
-    return sName;
-}
