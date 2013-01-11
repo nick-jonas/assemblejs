@@ -66,7 +66,7 @@ Creates a new project in the current directory.
 $ assemble watch
 ```
 
-Automatically compiles your SASS files on save, lints your Javascript, starts a local Python web-server, and opens your browser pointed to it.
+Automatically compiles your SASS files on save, lints your Javascript, starts a local http web-server, and opens your browser pointed to it.
 
 ---
 
