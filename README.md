@@ -18,7 +18,9 @@ You must have the following installed:
 
 [nodejs](http://nodejs.org/) >=v0.6.0
 
-[npm](https://npmjs.org/)
+```bash
+$ brew install node
+```
 
 [sass-globbing](https://github.com/chriseppstein/sass-globbing)
 
@@ -31,6 +33,9 @@ $ gem install sass-globbing
 ```bash
 $ gem install compass-rgbapng
 ```
+
+It's *highly* recommended to have [NPM](http://nodejs.org/download/) to install all dependencies.
+
 
 ## Installation
 
