@@ -17,5 +17,11 @@
         "input_file"        : "/boilerplate_style.scss",
         "output_file_dir"   : "app/sass/sections/",
         "output_file_name"  : "_<%=it.name%>.scss"
-    }]
+    },
+    {
+        "input_file"        : "/src/nested/test.js",
+        "output_file_dir"   : "/src/new/section/",
+        "output_file_name"  : "_<%=it.testVar%>.new"
+    }
+    ]
 }
