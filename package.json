@@ -23,6 +23,7 @@
     "requirejs"
   ],
   "dependencies": {
+    "doT": "git://github.com/nick-jonas/doT.git#cbc7041b646a79cca1034820db09167407d2f988",
     "lodash": "latest",
     "commander": "latest",
     "minimatch": "0.2.9",
