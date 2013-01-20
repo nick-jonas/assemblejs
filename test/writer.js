@@ -3,7 +3,6 @@ var _ = require('lodash'),
     path = require('path'),
     assert = require('assert'),
     shell = require('../lib/shell'),
-    utils = require('../lib/utils'),
     fs = require('fs'),
     os = require('os'),
     writer = require('../lib/commands/writer');
@@ -15,7 +14,7 @@ var TEST_DIR = path.join(__dirname, 'testproj');
 vows.describe('`create/init` command').addBatch({
     'with spaces in front of name and description': {
         topic: function(){
-            writer.execute(path.join(__dirname, '../lib/templates/create/'), TEST_DIR, this.callback);
+            writer.execute(path.join(__dirname, '../templates/create/'), TEST_DIR, this.callback, {'name' : 'test'}, true);
         },
         'is created': function(err, vars, result){
             assert.isNull(err);

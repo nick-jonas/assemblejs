@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
 var commands = require('../lib/commands'),
-    utils = require('../lib/utils'),
     _ = require('lodash'),
     path = require('path'),
     program = require('commander'),
@@ -38,7 +37,7 @@ if(program.init){
                 'path' : path.resolve(result.path)
             };
         // write files
-        commands.write.execute(path.join(__dirname, '../lib/templates/create/'), data.path, function(err, vars, result){
+        commands.write.execute(path.join(__dirname, '../templates/create/'), data.path, function(err, vars, result){
             if(err) throw err;
             console.log('✓ Successfully created project');
         });
@@ -60,47 +59,21 @@ if(program.reset){
 
 // command: model
 if(program.model){
-    promptClassBuild('model', function(className, desc){
 
-    });
 }
 
 // command: view
 if(program.view){
     // write files
-    commands.write.execute(path.join(__dirname, '../lib/templates/view/'), null, function(err, vars, result){
+    commands.write.execute(path.join(__dirname, '../templates/view/'), null, function(err, vars, result){
         if(err) throw err;
+        console.log(result);
         console.log('✓ Successfully created view files');
     });
 }
 
 // command: collection
 if(program.collection){
-    promptClassBuild('collection', function(className, desc){
 
-    });
-}
-
-
-
-/*
-    Prompts for user inputs, and sends sanitized name to
-    onComplete f(n)
-*/
-function promptClassBuild(name, onComplete){
-    prompt.get([{
-            name: 'className',
-            description: 'Enter the ' + name + ' name',
-            type: 'string',
-            required: true
-        }, {
-            name: 'classDesc',
-            description: 'Enter a description',
-            type: 'string'
-        }],
-        function(err, result){
-            var className = utils.sanitizeClassName(result.className);
-            onComplete.apply(this, [className, result.classDesc]);
-    });
 }
 
