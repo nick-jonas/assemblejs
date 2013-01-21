@@ -1,5 +1,5 @@
 {
-    "output_file_dir":  "/",
+    "output_file_dir":  ".",
     "file_filter":      ["!.DS_Store", "!thumbs.db"],
     "dir_filter":       ["!.svn", "!.git", "!.sass-cache"],
     "file_mapping":     [
@@ -9,12 +9,12 @@
         },
         {
             "input":     "/boilerplate_view.js",
-            "output":    "app/src/views/sections/<%@className it.name%>View.js"
+            "output":    "/app/src/views/sections/<%@className it.name%>View.js"
         },
         {
             "input":      "/boilerplate_style.scss",
             "output":     "app/sass/sections/_<%@className it.name%>.scss"
         }
     ],
-    "var_mapping": []
+    "var_mapping": {}
 }

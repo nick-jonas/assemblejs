@@ -1,0 +1,21 @@
+{
+    "output_file_dir":  "<%= it.outputDir %>/",
+    "file_filter":      ["!.DS_Store", "!thumbs.db"],
+    "dir_filter":       ["!.svn", "!.git", "!.sass-cache"],
+    "file_mapping":     [],
+    "var_mapping":      {
+        "outputDir": {
+            "description": "Enter the path relative to this directory",
+            "type": "string",
+            "default": "."
+        },
+        "name" : {
+            "description": "Name your project",
+            "type": "string"
+        },
+        "liveReload" : {
+            "description": "Include LiveReload? (yes/no)",
+            "type": "string"
+        }
+    }
+}

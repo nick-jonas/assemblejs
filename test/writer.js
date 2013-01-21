@@ -14,7 +14,7 @@ var TEST_DIR = path.join(__dirname, 'testproj');
 vows.describe('`create/init` command').addBatch({
     'with spaces in front of name and description': {
         topic: function(){
-            writer.execute(path.join(__dirname, '../templates/create/'), TEST_DIR, this.callback, {'name' : 'test'}, true);
+            writer.execute(path.join(__dirname, '../templates/init/'), this.callback, {'name' : 'test', 'outputDir': TEST_DIR}, true);
         },
         'is created': function(err, vars, result){
             assert.isNull(err);
