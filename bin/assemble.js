@@ -27,7 +27,7 @@ else if(program.build){
 }
 else{
     var template = program.args[0],
-        templateDir = path.resolve(__dirname, '../templates/' + template);
+        templateDir = path.resolve(__dirname, '../boilers/' + template);
     if(fs.existsSync(templateDir)){
         commands.write.execute(templateDir, function(err, vars, result){
             if(err) throw err;
