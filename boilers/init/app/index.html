@@ -20,9 +20,9 @@
 
     <body>
 
-        <script id="require-lib" data-main="src/config" src="src/libs/require.js"></script>
-
         <h1>Project: <%=it.name%></h1>
+
+        <script id="require-lib" data-main="src/config" src="src/libs/require.js"></script>
 
         <%? it.liveReload %>
         <script id="live-reload">// live reload snippet, this is removed by build script for production
