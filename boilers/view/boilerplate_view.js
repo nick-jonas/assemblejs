@@ -15,7 +15,7 @@ define([
 
         vent: {}, // event map passed in
 
-        className: <%@className it.name%>,
+        className: '<%@className it.name%>',
 
         initialize: function( options ){
 
