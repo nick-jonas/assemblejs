@@ -1,7 +1,7 @@
 {
   "name": "assemblejs",
   "preferGlobal": "true",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "author": "Nick Jonas <nick@workofjonas.com>",
   "description": "A fairly light AMD-style boilerplate for rapid development, using RequireJS, SASS, Backbone, and Handlebars",
   "contributors": [
