@@ -11,7 +11,7 @@
     }
   ],
   "bin":{
-    "assemblejs": "bin/assemble.js"
+    "assemble": "bin/assemble.js"
   },
   "repository": {
     "type": "git",
