@@ -1,0 +1,2 @@
+# add to-do functionality
+    - htaccess routes /todo to app that reads everything from to-do file

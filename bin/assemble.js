@@ -9,7 +9,7 @@ var commands = require('../lib/commands'),
 
 // initialize program
 program
-    .version('0.2.3')
+    .version('0.2.4')
     .option('-w, --watch', 'Watch an AssembleJS project')
     .option('-b, --build', 'Build production-ready files')
     .parse(process.argv);
